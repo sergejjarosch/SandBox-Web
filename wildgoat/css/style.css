@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
@@ -44,13 +47,12 @@ p{
     --dark-transparent: rgba(20, 20, 22, 0.89);
     --dark: #141416;
     --gray: #2b3031;
-    --glow: rgba(50, 255, 255, 0.73);
+    --glow: rgba(50, 255, 255, 0.88);
 }
 .navbar{
     background: var(--gray);
     top: 0;
     z-index: 1;
-    position: -webkit-sticky;
     position: sticky;
     box-shadow: var(--glow) 0px 10px 50px -18px;
 
@@ -125,20 +127,20 @@ nav{
         position: absolute;
         left: 45%;
         bottom: 25px;
-        transform: translateY(-50%);
-        scale: 80%;
+        scale: 45%;
         transition: 0.4s;
         &:hover{
-            scale: 90%;
+            scale: 50%;
         }
-    ;
     }
 }
 .about{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
+#verhalten{
+    scroll-margin-top: 70px;
+}
 
 .headline{
     text-align: center;
@@ -150,7 +152,9 @@ nav{
     justify-content: center;
 }
 .summary_mitte{
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
     padding: 10px;
     font-family: "Geologica", sans-serif;
     font-size: 20px;
@@ -163,7 +167,74 @@ nav{
         column-gap: 26px;
     }
 }
+.downDark-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#downDark{
+    scale: 45%;
+    transition: 0.4s;
+    &:hover{
+        scale: 50%;
+    }
+}
 
 .story{
     background: var(--dark);
+    display: flex;
+    height: 920px;
+    margin-top: 90px;
+}
+.storyCards{
+    margin-top: 80px;
+}
+
+
+#textGoat{
+    color: #ffffff;
+    width: 730px;
+    margin: auto;
+    font-size: 1.05rem;
+    transition: 1s;
+}
+
+.headGoatText{
+    color: #ffffff;
+    padding-top: 20px;
+    margin-bottom: 15px;
+    font-family: "Geologica", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.aussehen{
+    ul{margin-left: -39px;}
+    display: flex;
+    gap: 20px;
+
+    justify-content: center;
+    margin-top: 50px;
+}
+#aussehen{width: 33%}
+#lebensweise{width: 33%}
+#besonderheiten{width: 33%}
+
+
+#woLebt{
+    margin-top: 30px;
+}
+#daLebtDerBock{
+    column-count: 2;
+    margin-top: 20px;
+}
+
+#map{
+    width: 100%;
+    height: 640px;
+    border-style: none;
+    margin-top: 30px;
 }

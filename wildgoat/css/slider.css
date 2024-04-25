@@ -1,22 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+    --cardSize: 260px;
+}
 
 .card{
     margin-left: 10px;
+    margin-right: 10px;
     background: var(--gray);
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    width: 290px;
+    width: var(--cardSize);
     transition: 0.5s;
     &:hover{
-        scale: 105%;
+        scale: 108%;
         box-shadow: #000000 0px 10px 25px 0px;
+        cursor: pointer;
     }
     img{
         border-radius: 20px 20px 5px 5px;
-        width: 100%;
-        box-shadow: var(--glow) 0px 50px 80px -45px;
+        width: var(--cardSize);
+        box-shadow: rgba(160, 255, 255, 0.52) 0px 50px 80px -45px;
+        transition: 0.5s;
     }
     h2{
         font-family: "Bebas Neue", sans-serif;
@@ -27,6 +33,7 @@
         margin-top: -30px;
         margin-bottom: 0px;
         padding: 0;
+        transition: transform 0.5s, text-shadow 0.5s;
     }
     p{
         color: #ffffff;
@@ -34,37 +41,25 @@
         font-weight: 200;
         font-size: 15px;
         letter-spacing: 0.1px;
-        line-height: 150%;
+        line-height: 135%;
         padding-right: 15px;
         margin-left: -5px;
         margin-top: 0;
     }
+}
+.card:hover h2{
+    text-shadow: rgba(255, 255, 255, 0.42) 0px 5px 25px;
+}
+.card:hover img{
+    box-shadow: var(--glow) 0px 50px 80px -45px;
 }
 ul{
     list-style: none;
 }
 .slider-card{
     display: flex;
-    padding: 30px;
     justify-content: center;
-
 }
 .slider-frame{
     position: relative;
-}
-.btn_slider{
-    font-size: 120px;
-    font-family: "Bebas Neue", sans-serif;
-    color: #ffffff;
-}
-
-#btn_links{
-    position: absolute;
-    top: 43%;
-    right: 95%;
-}
-#btn_rechts{
-    position: absolute;
-    top: 43%;
-    left: 95%;
 }

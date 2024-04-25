@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 <div class="navbar">
@@ -69,8 +70,8 @@
                 </p>
             </div>
         </div>
-        <div id="down">
-            <img src="img/down.png" alt="">
+        <div>
+            <a href="#verhalten"><img id="down" src="img/down.png" alt=""></a>
         </div>
         <!--
         <div class="btn btnLeft">&lt;</div>
@@ -80,7 +81,7 @@
 </header>
 <main>
     <section class="container about">
-        <div class="headline">
+        <div class="headline" id="verhalten">
             <h2>Verhalten des Alpensteinbocks</h2>
             <div class="lesedauer">
                 <span class="material-symbols-outlined">
@@ -126,9 +127,12 @@
                 </p>
             </details>
         </div>
+        <div  class="downDark-button">
+            <a href="#verhalten"><img id="downDark" src="img/down-dark.png" alt=""></a>
+        </div>
     </section>
     <section class="story">
-        <div class="container slider">
+        <div class="container storyCards">
             <div class="slider-card">
                 <div class="card" id="bruno">
                     <img src="img/bruno.webp" alt="Bruno">
@@ -146,7 +150,7 @@
                         </li>
                         <li>
                             <p>
-                                <b>Alter: </b> Kann bis zu 18 Jahre alt werden
+                                <b>Alter: </b> Kann bis zu 15 Jahre alt werden
                             </p>
                         </li>
                     </ul>
@@ -157,12 +161,12 @@
                     <ul>
                         <li>
                             <p>
-                                <b>Lebensraum:</b> Hochalpine Regionen der Alpen
+                                <b>Lebensraum:</b> Mittelhohe Gebirgsregionen der Alpen
                             </p>
                         </li>
                         <li>
                             <p>
-                                <b>Höhe:</b> Klettert bis zu 3.000 Meter über dem Meeresspiegel
+                                <b>Höhe:</b> Lebt zwischen 1.500 und 2.500 Metern
                             </p>
                         </li>
                         <li>
@@ -178,17 +182,17 @@
                     <ul>
                         <li>
                             <p>
-                                <b>Lebensraum:</b> Hochalpine Regionen der Alpen
+                                <b>Lebensraum:</b> Verschiedene Gebirgsregionen der Alpen
                             </p>
                         </li>
                         <li>
                             <p>
-                                <b>Höhe:</b> Klettert bis zu 3.000 Meter über dem Meeresspiegel
+                                <b>Höhe:</b> Bewegt sich zwischen 1.000 und 2.500 Metern
                             </p>
                         </li>
                         <li>
                             <p>
-                                <b>Alter: </b> Kann bis zu 18 Jahre alt werden
+                                <b>Alter: </b> Kann bis zu 16 Jahre alt werden
                             </p>
                         </li>
                     </ul>
@@ -199,17 +203,17 @@
                     <ul>
                         <li>
                             <p>
-                                <b>Lebensraum:</b> Hochalpine Regionen der Alpen
+                                <b>Lebensraum:</b> Vielfältige Gebirgslandschaften der Alpen
                             </p>
                         </li>
                         <li>
                             <p>
-                                <b>Höhe:</b> Klettert bis zu 3.000 Meter über dem Meeresspiegel
+                                <b>Höhe:</b> Erkundet Höhen zwischen 1.000 und 3.000 Metern
                             </p>
                         </li>
                         <li>
                             <p>
-                                <b>Alter: </b> Kann bis zu 18 Jahre alt werden
+                                <b>Alter: </b> Kann bis zu 14 Jahre alt werden
                             </p>
                         </li>
                     </ul>
@@ -221,12 +225,50 @@
                 <div id="btn_rechts">&gt;</div>
                 -->
             </div>
+            <div class="textStory">
+                <h4 class="headGoatText">Klick eine von uns an und wir erzählen dir etwas.</h4>
+                <p id="textGoat"></p>
+            </div>
+        </div>
+    </section>
+    <section class="more">
+        <div class="container aussehen">
+                <div id="aussehen">
+                    <h2>Aussehen</h2>
+                    <ul>
+                        <li><p><b>Körpergröße</b>: bis zu 1,4 Meter Schulterhöhe</p></li>
+                        <li><p><b>Gewicht</b>: bis zu 100-130 kg bei Männchen, Weibchen sind kleiner</p></li>
+                        <li><p><b>Fell</b>: im Sommer kurz und rötlich-braun, im Winter dichter und dunkler</p></li>
+                        <li><p><b>Merkmale</b>: große, gekrümmte Hörner bei beiden Geschlechtern</p></li>
+                    </ul>
+                </div>
+                <div id="lebensweise">
+                    <h2>Lebensweise</h2>
+                    <ul>
+                        <li><p><b>Nahrung</b>: Gräser, Kräuter, Blätter, Rinde</p></li>
+                        <li><p><b>Aktivitätsmuster</b>: tagaktiv, in den Sommermonaten in höheren Lagen, im Winter in tieferen Gebieten</p></li>
+                        <li><p><b>Fortpflanzung</b>: Paarungszeit im Winter, Tragzeit etwa 5-6 Monate, meistens ein Jungtier pro Wurf</p></li>
+                        <li><p><b>Sozialverhalten</b>: Herdentiere, vor allem Männchen leben häufig in Junggesellengruppen außerhalb der Paarungszeit</p></li>
+                    </ul>
+                </div>
+                <div id="besonderheiten">
+                    <h2>Besonderheiten</h2>
+                    <ul>
+                        <li><p><b>Anpassungsfähig</b> an extrem steile und felsige Lebensräume</p></li>
+                        <li><p><b>Hervorragende Kletterer</b>, können in felsigen Gebieten bis zu 3.000 Meter Höhe leben</p></li>
+                        <li><p>Männliche Tiere (Böcke) zeigen im Frühjahr spektakuläre Kämpfe um die Dominanz und das Paarungsrecht</p></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="container karte">
+            <h2 id="woLebt">Wo lebt der Alpensteinbock?</h2>
+            <p id="daLebtDerBock">
+                Der Alpensteinbock lebt hauptsächlich in den Gebirgsregionen der Alpen. Sein Lebensraum erstreckt sich über verschiedene europäische Länder, darunter die Schweiz, Österreich, Italien, Frankreich und Teile von Deutschland. Innerhalb dieser Gebiete bewohnt der Alpensteinbock vor allem steile, felsige Hänge und Klippen in Höhenlagen von etwa 1.000 bis 3.500 Metern. Diese hochalpinen Regionen bieten ihm Schutz vor Raubtieren und sind reich an seiner bevorzugten Nahrung, wie Gräsern, Kräutern und Alpenblumen.</p>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d619400.8008865635!2d7.999108468569458!3d46.69970258341565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1714051077235!5m2!1sde!2sde" loading="lazy" ></iframe>
         </div>
     </section>
 </main>
 <footer>
-
 </footer>
-
 </body>
 </html>
