@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 
-.slider{
+.slider-show{
     width: 800px;
     margin: 30px auto;
     overflow: hidden;

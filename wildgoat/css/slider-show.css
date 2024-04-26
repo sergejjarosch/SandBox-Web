@@ -1,0 +1,24 @@
+:root{
+    --imageSize: 1200px;
+}
+
+
+.slider-show{
+    width: var(--imageSize);
+    margin: 30px auto;
+    overflow: hidden;
+    img{
+        width: var(--imageSize);
+    }
+}
+
+.imageContainer{
+    width: 4000px;
+    font-size: 0;
+    transition: 2.5s;
+}
+
+.slider-buttons{
+    text-align: center;
+    padding-top: 10px;
+}

@@ -19,3 +19,41 @@ document.querySelectorAll(".card").forEach((card, index) => {
         document.querySelector(".headGoatText").textContent = headGoatText[index];
     });
 });
+
+//Slider - - - - - - - -
+
+let root = document.documentElement;
+let imageSize = getComputedStyle(root).getPropertyValue('--imageSize').trim();
+let imageSizeInPixels = parseInt(imageSize, 10);
+let pos = 0;
+let imgCount = document.querySelectorAll(".imageContainer img").length;
+let radios = document.querySelectorAll('.slider-buttons input[type = "radio"]');
+let rek;
+//die Breite von ImgCointainer wird angepasst
+document.querySelector(".imageContainer").style.width = (imgCount * imageSizeInPixels)+"px";
+
+radios.forEach((e, i) => {
+    e.addEventListener("click", () => {
+        clearTimeout(rek); // Timeout stoppen
+        move(i);
+        autoMove(); // Timeout neu starten
+    });
+});
+let move = (i) => {
+    document.querySelector(".imageContainer").style.marginLeft = -(i* imageSizeInPixels) + "px";
+    radios[i].checked = true;
+    pos = i;
+}
+
+let autoMove = () => {
+    rek = setTimeout(() => {
+        pos ++;
+        if (pos > imgCount-1){
+            pos = 0;
+        }
+        move(pos);
+        autoMove();
+    }, 5000);
+};
+
+autoMove();

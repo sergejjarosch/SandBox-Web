@@ -40,7 +40,7 @@ p{
 }
 
 .container{
-    width: 80%;
+    width: var(--imageSize);
     margin: auto;
 }
 :root{
@@ -48,6 +48,7 @@ p{
     --dark: #141416;
     --gray: #2b3031;
     --glow: rgba(50, 255, 255, 0.88);
+    --imageSize: 1200px;
 }
 .navbar{
     background: var(--gray);
@@ -154,7 +155,8 @@ nav{
 .summary_mitte{
     margin-left: auto;
     margin-right: auto;
-    width: 450px;
+    text-align: center;
+
     padding: 10px;
     font-family: "Geologica", sans-serif;
     font-size: 20px;
@@ -171,9 +173,9 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 #downDark{
+    margin-top: 60px;
     scale: 45%;
     transition: 0.4s;
     &:hover{
@@ -181,14 +183,18 @@ nav{
     }
 }
 
+
 .story{
     background: var(--dark);
     display: flex;
     height: 920px;
-    margin-top: 90px;
+    margin-top: 30px;
 }
 .storyCards{
-    margin-top: 80px;
+    margin-top: 90px;
+}
+#bruno{
+    scroll-margin-top: 120px;
 }
 
 
@@ -225,7 +231,8 @@ nav{
 
 
 #woLebt{
-    margin-top: 30px;
+    margin-top: 60px;
+    text-align: center;
 }
 #daLebtDerBock{
     column-count: 2;
@@ -234,7 +241,19 @@ nav{
 
 #map{
     width: 100%;
-    height: 640px;
+    height: 540px;
     border-style: none;
     margin-top: 30px;
+    margin-bottom: 70px;
+}
+.show{
+    background: var(--dark);
+}
+
+.textZurShow{
+    color: #ffffff;
+    text-align: center;
+    h2{
+        padding-top: 60px;
+    }
 }
