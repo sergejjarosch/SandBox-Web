@@ -2,10 +2,10 @@
     --imageSize: 1200px;
 }
 
-
 .slider-show{
     width: var(--imageSize);
-    margin: 30px auto;
+    margin: 10px auto;
+    margin-bottom: 0;
     overflow: hidden;
     img{
         width: var(--imageSize);
@@ -19,6 +19,11 @@
 }
 
 .slider-buttons{
+    margin-top: 15px;
+    margin-bottom: 20px;
     text-align: center;
-    padding-top: 10px;
+
+    input[type='radio'] {
+        accent-color: var(--dark);
+    }
 }

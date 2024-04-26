@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/slider-show.css">
+    <link rel="stylesheet" href="css/accordion.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="js/script.js" defer></script>
 </head>
@@ -16,10 +17,11 @@
     <nav class="container">
             <img src="img/logo-goat.png" alt="">
         <ul class="menu_nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Story</a></li>
-            <li><a href="#">More</a></li>
+            <li><a href="#info1">Home</a></li>
+            <li><a href="#verhalten">Verhalten</a></li>
+            <li><a href="#bruno">Story</a></li>
+            <li><a href="#aussehen">Kurz-Info</a></li>
+            <li><a href="#textZurShow">Aussehen</a></li>
         </ul>
     </nav>
 </div>
@@ -275,7 +277,7 @@
     </section>
     <section class="show">
         <div class="container">
-            <div class="textZurShow">
+            <div class="textZurShow" id="textZurShow">
                 <h2>
                     Schön sehen die aus
                 </h2>
@@ -283,6 +285,25 @@
                     Diese Merkmale machen den Alpensteinbock zu einem wahren Meister der Alpen <br>
                     und einem faszinierenden Beispiel für die Anpassungsfähigkeit der Natur.
                 </p>
+                <div class="accordionContainer">
+                    <button class="accordion">Majestätische Hörner</button>
+                    <div class="panel">
+                        <img src="" alt="">
+                        <p>Die Hörner des Alpensteinbocks sind wohl sein auffälligstes Merkmal. Sie können bei männlichen Tieren bis zu einem Meter lang werden und sind nach hinten gebogen. Diese Hörner dienen nicht nur als Schaukampfinstrument während der Paarungszeit, sondern auch als effektive Verteidigungswaffe gegen Raubtiere. Die jährlichen Wachstumsringe an den Hörnern erzählen zudem die Geschichte des Alters und der Lebensbedingungen des Tieres.</p>
+                    </div>
+                    <button class="accordion">Robuster Körperbau</button>
+                    <div class="panel">
+                        <p>Der Alpensteinbock besitzt einen kräftigen Körperbau, der es ihm ermöglicht, in den unwirtlichen und steilen Bergregionen zu überleben. Seine starken Beine mit den breiten Hufen geben ihm die nötige Traktion auf rutschigen Untergründen und ermöglichen ihm, geschickt auf schmalen Felsvorsprüngen zu klettern.</p>
+                    </div>
+                    <button class="accordion">Dickes Fell</button>
+                    <div class="panel">
+                        <p>Das dichte Fell des Alpensteinbocks bietet ihm Schutz vor den extremen Wetterbedingungen in den Hochalpen. Im Winter entwickelt er ein besonders dickes Unterfell, das ihn vor Kälte schützt, während das Sommerfell kürzer und weniger dicht ist, um Überhitzung zu vermeiden.</p>
+                    </div>
+                    <button class="accordion">Anpassungsfähige Physiologie</button>
+                    <div class="panel">
+                        <p>Die Physiologie des Alpensteinbocks ist perfekt an das Leben in großen Höhen angepasst. Seine Lungen und sein Kreislaufsystem sind so entwickelt, dass sie auch bei geringem Sauerstoffgehalt effizient arbeiten können. Diese Anpassungen ermöglichen es dem Alpensteinbock, in Höhen zu leben und zu gedeihen, die für viele andere Tierarten unerreichbar sind.</p>
+                    </div>
+                </div>
             </div>
             <div class="slider-show">
                 <div class="imageContainer">
@@ -300,6 +321,55 @@
     </section>
 </main>
 <footer>
+    <div class="container">
+        <div class="footerFeld">
+            <div class="footerReihe">
+                <div id="uberuns">
+                    <h3>Über uns</h3>
+                    <p>
+                        Wir sind ein Team von Naturbegeisterten, die sich der Erforschung und dem Schutz der Alpenfauna widmen. Unser Fokus liegt auf dem majestätischen Alpensteinbock, einem Symbol für Stärke und Anpassungsfähigkeit.
+                    </p>
+                </div>
+                <div id="kontakteFooter">
+                    <h3>Kontakt</h3>
+                    <p>
+                        Alpensteinbock Forschungsinstitut <br>
+                        Bergstraße 123 <br>
+                        12345 Alpenstadt <br>
+                        E-Mail: info@alpensteinbockprojekt.de
+                    </p>
+                </div>
+                <div id="rechtliches">
+                    <h3>Rechtliches</h3>
+                    <p>Diese Webseite dient ausschließlich Bildungszwecken. Alle Inhalte sind fiktiv und sollen das Lernen und die Entwicklung von Webdesign-Fähigkeiten fördern.</p>
+                </div>
+            </div>
+            <div class="footerReihe">
+                <div id="folgenSieUns">
+                    <h3>Folgen Sie uns</h3>
+                    <p>Besuchen Sie uns auf unseren Social-Media-Kanälen, um mehr über unsere Arbeit und den Alpensteinbock zu erfahren.</p>
+                    <div class="social">
+                        <a href="">Facebook</a>
+                        <a href="">X</a>
+                        <a href="">Instagram</a>
+                    </div>
+                </div>
+                <div id="spenden">
+                    <h3>Spenden</h3>
+                    <p>Unterstützen Sie unsere Forschung und den Schutz des Alpensteinbocks durch Ihre Spende. Jeder Beitrag hilft uns, mehr über diese faszinierenden Tiere zu lernen und ihren Lebensraum zu erhalten.</p>
+                </div>
+            </div>
+            <div class="footerMenuCont">
+                <ul class="footerMenu">
+                    <li><a href="#info1">Home</a></li>
+                    <li><a href="#verhalten">Verhalten</a></li>
+                    <li><a href="#bruno">Story</a></li>
+                    <li><a href="#aussehen">Kurz-Info</a></li>
+                    <li><a href="#textZurShow">Aussehen</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 </html>

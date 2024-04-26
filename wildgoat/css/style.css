@@ -49,6 +49,7 @@ p{
     --gray: #2b3031;
     --glow: rgba(50, 255, 255, 0.88);
     --imageSize: 1200px;
+    --font-H3:"Geologica", sans-serif;
 }
 .navbar{
     background: var(--gray);
@@ -196,6 +197,9 @@ nav{
 #bruno{
     scroll-margin-top: 120px;
 }
+#info1{
+    scroll-margin-top: 300px;
+}
 
 
 #textGoat{
@@ -225,7 +229,9 @@ nav{
     justify-content: center;
     margin-top: 50px;
 }
-#aussehen{width: 33%}
+#aussehen{
+    scroll-margin-top: 60px;
+    width: 33%}
 #lebensweise{width: 33%}
 #besonderheiten{width: 33%}
 
@@ -254,6 +260,34 @@ nav{
     color: #ffffff;
     text-align: center;
     h2{
-        padding-top: 60px;
+        padding-top: 50px;
     }
+}
+footer{
+    background: var(--gray);
+    margin: 0;
+    padding: 0;
+    a{
+        color: white;
+        font-family: "Geologica", sans-serif;
+    }
+}
+
+.footerFeld{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    gap: 10px 20px;
+}
+.footerReihe{
+    display: flex;
+    column-gap: 5%;
+}
+.footerMenu{
+    display: flex;
+    gap: 40px;
+    justify-content: end;
+    list-style: none;
 }
